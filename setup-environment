@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export DL_DIR="$HOME/share/yocto/master/download"
+export SSTATE_DIR="HOME/share/yocto/master/sstate"
