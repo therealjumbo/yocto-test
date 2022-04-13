@@ -2,7 +2,7 @@ header:
     version: 10
 
 build_system: oe
-distro: poky
+distro: poky-tiny
 machine: qemux86
 target: core-image-minimal
 
