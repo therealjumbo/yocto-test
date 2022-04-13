@@ -1,9 +1,9 @@
 header:
     version: 10
 
-distro: poky
 build_system: oe
-machine: qemu
+distro: poky
+machine: qemux86
 target: core-image-minimal
 
 repos:
@@ -24,10 +24,16 @@ repos:
             meta-initramfs:
             meta-networking:
 
+    meta-yocto:
+        url: "https://git.yoctoproject.org/meta-yocto"
+        refspec: "master"
+        path: "layers/meta-yocto"
+        layers:
+            meta-poky:
+
     bitbake:
         url: "https://git.openembedded.org/bitbake"
         refspec: "master"
         path: "layers/openembedded-core/bitbake"
         layers:
             bitbake: excluded
-
